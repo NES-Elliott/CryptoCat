@@ -24,7 +24,7 @@ const key = {
   },
   remove() {
     console.log('Remove says hello')
-  },
+  }
 }
 
 module.exports = key

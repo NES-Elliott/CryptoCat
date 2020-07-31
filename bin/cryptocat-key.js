@@ -4,16 +4,16 @@ const key = require('../commands/key')
 program
   .command('set')
   .description('Set API Key -- Get at https://nomics.com')
-  .action(() => key.set)
+  .action(key.set)
 
 program
   .command('show')
-  .description('Set API Key -- Get at https://nomics.com')
-  .action(() => key.show)
+  .description('Show API Key')
+  .action(key.show)
 
 program
   .command('remove')
-  .description('Set API Key -- Get at https://nomics.com')
-  .action(() => key.remove)
+  .description('Remove API Key')
+  .action(key.remove)
 
 program.parse(process.argv)
